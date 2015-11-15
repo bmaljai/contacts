@@ -1,0 +1,22 @@
+<h1><%= @contact.full_name %></h1>
+
+<div>
+<%= @contact.last_name %>
+</div>
+
+<div>
+<%= @contact.email %>
+</div>
+
+<div>
+<%= @contact.j_phone %>
+</div>
+
+<div>
+<%= @contact.friendly_updated_at %>
+</div>
+
+
+
+<%= link_to "delete", "/products/#{@contact.id}", method: :delete %>
+<%= link_to "edit", "/products/#{@contact.id}/edit", method: :get %>
