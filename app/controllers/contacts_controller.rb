@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
 
   def create
     puts "Hello I am in the create action"
-    Contact.create(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], phone: params[:phone])
+    Contact.create(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], phone: params[:phone], bio: params[:bio], middle_name: params[:middle_name])
     redirect_to "/contacts"
   end
   
