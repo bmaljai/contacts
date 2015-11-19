@@ -23,7 +23,12 @@
 <div>
 <%= @contact.friendly_updated_at %>
 </div>
-
+<div>
+<%= @contact.lat %>
+</div>
+<div>
+<%= @contact.longit %>
+</div>
 
 
 <%= link_to "delete", "/products/#{@contact.id}", method: :delete %>
